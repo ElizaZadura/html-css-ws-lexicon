@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Marketplace</title>
-    <!--     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link id="style" rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <header>
@@ -41,13 +42,39 @@
     <footer>
       Copyright &copy; 2024
       <a id="footer-link" href="https://zadura.se">Zadura</a>
+      <button type="button" class="reg-btn" onclick="swapStyleSheet(sheet);">
+        Pretty!
+      </button>
+      <button
+        type="button"
+        class="btn btn-success"
+        onclick="swapStyleSheet(sheet)"
+      >
+        Pretty or plain?
+      </button>
     </footer>
     <script>
+      var sheet = "css/new-style.css";
       var title = document.title;
       document.querySelector("h1").innerHTML = title;
-      /* var description =
-        "Browse my marketplace! There are always new items to buy!";
-      document.querySelector("p").innerHTML = description; */
+
+      function swapStyleSheet() {
+        try {
+          const linkElement = document.getElementById("style");
+          if (linkElement) {
+            const currentHref = linkElement.getAttribute("href");
+            if (currentHref === "css/style.css") {
+              linkElement.setAttribute("href", "css/new-style.css");
+            } else {
+              linkElement.setAttribute("href", "css/style.css");
+            }
+          } else {
+            console.error("The link element with id 'style' was not found.");
+          }
+        } catch (error) {
+          console.error("An error occurred while swapping stylesheets:", error);
+        }
+      }
     </script>
   </body>
 </html>
