@@ -1,5 +1,28 @@
+header {
+  background-color: #d00000;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+h3 {
+  text-align: center;
+}
+section {
+  margin: 20px;
+  padding: 20px;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+}
+h2 {
+  color: #4caf50;
+  text-align: center;
+}
 body {
-  font-family: "Arial", Times, serif;
+  font-family: "Arial", sans-serif;
+  background-color: #d4d0d0;
+  color: #333;
+  margin: 0;
+  padding: 0;
 }
 
 button {
@@ -13,4 +36,32 @@ button {
   font-size: 16px;
   margin: 4px 2px;
   cursor: pointer;
+}
+#products {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.product {
+  background-color: #f0f0f0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  max-width: 600px;
+}
+footer {
+  background-color: black;
+  color: #fff;
+  margin-top: 20px;
+  text-align: center;
+  border-radius: 10px;
+  padding: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
 }
