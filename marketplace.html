@@ -1,15 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Marketplace</title>
+    <!--     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
+  </head>
+  <body>
     <header>
-        <title>
-            <h1>Marketplace</h1>
-        </title>
+      <h1></h1>
     </header>
-</body>
+    <main>
+      <p>A short description</p>
+      <section id="products">
+        <h3>Featured Products</h3>
+        <div class="product">
+          <h3></h3>
+          <img src="https://via.placeholder.com/150" alt="Product 1" />
+          <p></p>
+          <ul>
+            <li>Price</li>
+            <li>Category</li>
+            <li>Rating</li>
+          </ul>
+          <div class="email-field" aria-label="Email">snuffles@snuffles.se</div>
+          <button class="details">View details</button>
+        </div>
+        <div class="product">
+          <h3></h3>
+          <img src="https://via.placeholder.com/150" alt="Product 2" />
+          <p></p>
+          <ul>
+            <li>Price</li>
+            <li>Category</li>
+            <li>Rating</li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer>
+      Copyright &copy; 2024
+      <a id="footer-link" href="https://zadura.se">Zadura</a>
+    </footer>
+    <script>
+      var title = document.title;
+      document.querySelector("h1").innerHTML = title;
+      /* var description =
+        "Browse my marketplace! There are always new items to buy!";
+      document.querySelector("p").innerHTML = description; */
+    </script>
+  </body>
 </html>
